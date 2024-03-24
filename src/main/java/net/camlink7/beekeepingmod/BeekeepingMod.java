@@ -2,6 +2,7 @@ package net.camlink7.beekeepingmod;
 
 import com.mojang.logging.LogUtils;
 import net.camlink7.beekeepingmod.item.ModItems;
+import net.camlink7.beekeepingmod.sound.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,7 +26,11 @@ public class BeekeepingMod
 
         ModItems.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
+
         modEventBus.addListener(this::commonSetup);
+
 
         MinecraftForge.EVENT_BUS.register(this);
     }

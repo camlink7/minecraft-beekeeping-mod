@@ -1,0 +1,8 @@
+{
+  "bee_smoker_puff_sound": {
+    "subtitle": "sounds.beekeepingmod.bee_smoker_puff_sound",
+    "sounds": [
+      "beekeepingmod:bee_smoker_puff_sound"
+    ]
+  }
+}
