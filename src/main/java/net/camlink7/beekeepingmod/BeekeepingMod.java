@@ -1,6 +1,7 @@
 package net.camlink7.beekeepingmod;
 
 import com.mojang.logging.LogUtils;
+import net.camlink7.beekeepingmod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,8 @@ public class BeekeepingMod
     public BeekeepingMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
