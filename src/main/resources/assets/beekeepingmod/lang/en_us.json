@@ -1,5 +1,7 @@
 {
   "itemGroup.beekeepingtab": "Beekeeping",
   "item.beekeepingmod.bee_smoker": "Bee Smoker",
+  "item.beekeepingmod.beeswax":  "Beeswax",
+
   "item.beekeepingmod.sticky_bun": "Sticky Bun"
 }

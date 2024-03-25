@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "beekeeping",
+  "ingredient": {
+    "item": "minecraft:honeycomb"
+  },
+  "result": "beekeepingmod:beeswax",
+  "experience": 0.25,
+  "cookingtime": 200
+}

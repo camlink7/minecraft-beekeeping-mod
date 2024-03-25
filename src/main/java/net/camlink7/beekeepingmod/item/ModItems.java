@@ -2,6 +2,7 @@ package net.camlink7.beekeepingmod.item;
 
 import net.camlink7.beekeepingmod.BeekeepingMod;
 import net.camlink7.beekeepingmod.item.custom.BeeSmokerItem;
+import net.camlink7.beekeepingmod.item.custom.BeeswaxItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -21,6 +22,11 @@ public class ModItems {
                     .stacksTo(1)
                     .setNoRepair()));
 
+    public static final RegistryObject<Item> BEESWAX = ITEMS.register("beeswax",
+            () -> new BeeswaxItem(new Item.Properties()
+                    .tab(ModCreativeModeTab.BEEKEEPING_TAB)
+                    .stacksTo(64)));
+
     // Food
     public static final RegistryObject<Item> STICKY_BUN = ITEMS.register("sticky_bun",
             () -> new Item(new Item.Properties()
@@ -31,8 +37,8 @@ public class ModItems {
     // Build Foods
     public static class Foods {
         public static final FoodProperties STICKY_BUN = new FoodProperties.Builder()
-                .nutrition(6)
-                .saturationMod(1f)
+                .nutrition(5)
+                .saturationMod(0.7f)
                 .alwaysEat()
                 .build();
     }
