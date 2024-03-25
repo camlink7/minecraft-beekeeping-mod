@@ -6,6 +6,10 @@ import net.camlink7.beekeepingmod.item.custom.BeeswaxItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,6 +18,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BeekeepingMod.MOD_ID);
+
+    public static final DeferredRegister<Block> BLOCKS =
+            DeferredRegister.create(ForgeRegistries.BLOCKS, BeekeepingMod.MOD_ID);
 
     // Items
     public static final RegistryObject<Item> BEE_SMOKER = ITEMS.register("bee_smoker",
@@ -33,6 +40,9 @@ public class ModItems {
                     .tab(ModCreativeModeTab.BEEKEEPING_TAB)
                     .stacksTo(64)
                     .food(Foods.STICKY_BUN)));
+
+    // Blocks
+
 
     // Build Foods
     public static class Foods {
